@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../../assets/fonts/../../assets/fonts/LibreFranklin-SemiBold.woff2")
+      format("woff2"),
+    url("../../assets/fonts/../../assets/fonts/LibreFranklin-SemiBold.woff")
+      format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../../assets/fonts/LibreFranklin-Medium.woff2") format("woff2"),
+    url("../../assets/fonts/LibreFranklin-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../../assets/fonts/LibreFranklin-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/LibreFranklin-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../../assets/fonts/LibreFranklin-ExtraBold.woff2") format("woff2"),
+    url("../../assets/fonts/LibreFranklin-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../../assets/fonts/LibreFranklin-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/LibreFranklin-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../../assets/fonts/LibreFranklin-Light.woff2") format("woff2"),
+    url("../../assets/fonts/LibreFranklin-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "potro_sans";
+  src: url("../../assets/fonts/potro_sans_bangla_regular-webfont.woff2")
+      format("woff2"),
+    url("../../assets/fonts/potro_sans_bangla_regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "potro_sans";
+  src: url("../../assets/fonts/potro_sans_bangla_bold-webfont.woff2")
+      format("woff2"),
+    url("../../assets/fonts/potro_sans_bangla_bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
