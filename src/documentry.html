@@ -10,51 +10,17 @@
     />
     <meta name="keywords" content="website, blog, foo, bar" />
     <meta name="author" content="John Doe" />
-    <title>Tanzim Mishu Blog</title>
+    <title>Documentry</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body class="relative">
-    <!--//////////////////////////////// -->
-    <!-- Social Icon -->
-    <!--//////////////////////////////// -->
-    <div
-      class="container w-90 flex justify-center items-center gap-2 absolute left-[50%] transform translate-x-[-50%] top-4"
-    >
-      <a
-        href="#"
-        class="relative before:absolute before:left-[50%] before:translate-x-[-50%] before:-top-4 before:w-14 before:h-2 before:content-[''] before:bg-white before:rounded-b-lg"
-        ><img
-          class="w-10 aspect-auto"
-          src="assets/images/default_facebook.png"
-          alt=""
-      /></a>
-      <a href="#"
-        ><img
-          class="w-10 aspect-auto"
-          src="assets/images/default_youtube.png"
-          alt=""
-      /></a>
-      <a href="#"
-        ><img
-          class="w-10 aspect-auto"
-          src="assets/images/default_twitter.png"
-          alt=""
-      /></a>
-      <a href="#"
-        ><img
-          class="w-10 aspect-auto"
-          src="assets/images/default_instagram.png"
-          alt=""
-      /></a>
-    </div>
-
+  <body>
     <!--//////////////////////////////// -->
     <!-- Custom Header -->
     <!--//////////////////////////////// -->
-    <header class="h-[88vh]">
+    <header class="h-[182px]">
       <div class="bg-hero-bg h-full bg-cover bg-[center] w-full flex-1">
-        <div class="container w-90 h-full flex justify-start items-end">
-          <div class="mb-10 flex items-center gap-10">
+        <div class="container w-90 h-full flex justify-start items-center">
+          <div class="flex items-center gap-10">
             <img
               src="./assets/images/cropped-website-pp-new.png"
               alt="Profile Photo"
@@ -78,16 +44,13 @@
     <!--//////////////////////////////// -->
     <!-- Navigation -->
     <!--//////////////////////////////// -->
-    <nav class="h-[12vh] z-[9999] hidden md:block sticky top-0">
+    <nav class="z-[9999] hidden md:block">
       <div class="border-b border-black/10 bg-white">
         <div class="container w-90">
           <div class="relative py-3">
             <ul class="flex flex-wrap">
               <li>
-                <a
-                  class="@apply nav__link text-black/60"
-                  href="index.html"
-                  area-label="home"
+                <a class="@apply nav__link" href="index.html" area-label="home"
                   >home</a
                 >
               </li>
@@ -98,7 +61,7 @@
               </li>
               <li>
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link text-black/60"
                   href="documentry.html"
                   area-label="documentary films"
                   >documentary films</a
@@ -145,17 +108,6 @@
                 >
               </li>
             </ul>
-
-            <a
-              href="#content"
-              class="absolute top-[50%] transform translate-y-[-50%] right-0 p-3"
-              id="down__arrow"
-            >
-              <iconify-icon
-                class="text-2xl transform rotate-90 text-black/70"
-                icon="material-symbols:arrow-right-alt"
-              ></iconify-icon>
-            </a>
           </div>
         </div>
       </div>
@@ -265,7 +217,7 @@
       <!-- Main content and right widget area -->
       <!--//////////////////////////////// -->
       <div class="container w-90 flex justify-between gap-6">
-        <section class="w-[100%] md:w-[58%] self-start" id="content">
+        <section class="w-[100%] md:w-[58%] self-start">
           <article class="mb-14">
             <a href="#" area-label="time">
               <time
