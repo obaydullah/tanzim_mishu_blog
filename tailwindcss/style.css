@@ -91,6 +91,6 @@ body {
     @apply px-[14px] py-4 inline-block text-black lowercase text-sm font-[600] duration-500 hover:text-black/60 pl-0 pr-6;
   }
   .title {
-    @apply text-[26px] font-porto mb-3 inline-block font-thin text-black/90 hover:underline;
+    @apply text-[20px] md:text-[26px] font-porto mb-3 inline-block font-thin text-black/90 hover:underline hover:underline-offset-8;
   }
 }
