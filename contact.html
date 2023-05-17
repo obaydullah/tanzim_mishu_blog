@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This short description describes my website."
+    />
+    <meta name="keywords" content="website, blog, foo, bar" />
+    <meta name="author" content="John Doe" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="assets/images/cropped-website-scaled-1.webp"
+      type="image/webp"
+    />
+  </head>
+  <body>
+    <!--//////////////////////////////// -->
+    <!-- Social Icon -->
+    <!--//////////////////////////////// -->
+    <div
+      class="container w-90 flex justify-center items-center gap-2 absolute left-[50%] transform translate-x-[-50%] top-4"
+    >
+      <a href="#" class="relative group" aria-label="Facebook">
+        <img
+          class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
+          src="assets/images/social__hover.svg"
+          alt="hover" />
+
+        <img
+          width="40"
+          height="40"
+          src="assets/images/default_facebook.png"
+          alt=""
+      /></a>
+      <a href="#" class="relative group" aria-label="Youtube">
+        <img
+          class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
+          src="assets/images/social__hover.svg"
+          alt="hover" />
+        <img
+          width="40"
+          height="40"
+          src="assets/images/default_youtube.png"
+          alt=""
+      /></a>
+      <a href="#" class="relative group" aria-label="twitter">
+        <img
+          class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
+          src="assets/images/social__hover.svg"
+          alt="hover" />
+        <img
+          width="40"
+          height="40"
+          src="assets/images/default_twitter.png"
+          alt=""
+      /></a>
+      <a href="#" class="relative group" aria-label="instagram">
+        <img
+          class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
+          src="assets/images/social__hover.svg"
+          alt="hover" />
+        <img
+          width="40"
+          height="40"
+          src="assets/images/default_instagram.png"
+          alt=""
+      /></a>
+    </div>
+
+    <!--//////////////////////////////// -->
+    <!-- Custom Header -->
+    <!--//////////////////////////////// -->
+    <header class="h-[182px]">
+      <div
+        class="bg-[url('../../assets/images/cropped-website-scaled-1.webp')] h-full bg-cover bg-[center] w-full flex-1"
+      >
+        <div class="container w-90 h-full flex justify-start items-center">
+          <div class="flex items-center gap-10">
+            <img
+              src="assets/images/cropped-website-pp-new.webp"
+              alt="Profile Photo"
+              class="w-20 aspect-[1]"
+            />
+            <div>
+              <h2
+                class="text-2xl md:text-4xl font-bold uppercase text-white tracking-wider"
+              >
+                Tanzim Mishu
+              </h2>
+              <p class="text-base font-normal text-white lowercase">
+                Military grade filmmaker
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--//////////////////////////////// -->
+    <!-- Navigation -->
+    <!--//////////////////////////////// -->
+    <nav class="z-[9999] hidden md:block">
+      <div class="border-b border-black/10 bg-white">
+        <div class="container w-90">
+          <div class="relative py-3">
+            <ul class="flex flex-wrap">
+              <li>
+                <a class="@apply nav__link" href="index.html" area-label="home"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a class="@apply nav__link" href="tvc.html" area-label="tvc"
+                  >tvc</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link"
+                  href="documentry.html"
+                  area-label="documentary films"
+                  >documentary films</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link"
+                  href="shortfilms.html"
+                  area-label="short films"
+                  >short films</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link"
+                  href="artdesign.html"
+                  area-label="art and design"
+                  >art and design</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link"
+                  href="musicalfilms.html"
+                  area-label="musical films"
+                  >musical films</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link"
+                  href="writings.html"
+                  area-label="writings"
+                  >writings</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link text-black/60"
+                  href="contact.html"
+                  area-label="contact"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--//////////////////////////////// -->
+    <!-- Mobile Menu -->
+    <!--//////////////////////////////// -->
+    <nav class="z-[9999] md:hidden">
+      <div class="border-b border-black/10 bg-white">
+        <!-- toggle button -->
+        <div class="text-center border-b border-black/10">
+          <button
+            class="inline-block mx-auto text-sm font-bold p-4"
+            onClick="menuShow()"
+          >
+            <span class="text-[19px] align-middle" id="toggle__icon"
+              ><iconify-icon icon="ic:sharp-menu"></iconify-icon
+            ></span>
+            Menu
+          </button>
+        </div>
+
+        <div class="container w-90 hidden" id="mobile__menu">
+          <div class="relative py-3">
+            <ul class="flex flex-col">
+              <li class="border-b border-black/20">
+                <a
+                  class="@apply nav__link text-black/60"
+                  href="index.html"
+                  area-label="home"
+                  >home</a
+                >
+              </li>
+              <li class="border-b border-black/20">
+                <a class="@apply nav__link" href="tvc.html" area-label="tvc"
+                  >tvc</a
+                >
+              </li>
+              <li class="border-b border-black/20">
+                <a
+                  class="@apply nav__link"
+                  href="documentry.html"
+                  area-label="documentary films"
+                  >documentary films</a
+                >
+              </li>
+              <li class="border-b border-black/20">
+                <a
+                  class="@apply nav__link"
+                  href="shortfilms.html"
+                  area-label="short films"
+                  >short films</a
+                >
+              </li>
+              <li class="border-b border-black/20">
+                <a
+                  class="@apply nav__link"
+                  href="artdesign.html"
+                  area-label="art and design"
+                  >art and design</a
+                >
+              </li>
+              <li class="border-b border-black/20">
+                <a
+                  class="@apply nav__link"
+                  href="musicalfilms.html"
+                  area-label="musical films"
+                  >musical films</a
+                >
+              </li>
+              <li class="border-b border-black/20">
+                <a
+                  class="@apply nav__link"
+                  href="writings.html"
+                  area-label="writings"
+                  >writings</a
+                >
+              </li>
+              <li class="border-b border-black/20 last:border-b-0">
+                <a
+                  class="@apply nav__link"
+                  href="contact.html"
+                  area-label="contact"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="container w-90 flex flex-col md:flex-row gap-4 py-20">
+        <div class="w-full md:w-[50%]">
+          <h2 class="text-sm font-extrabold uppercase tracking-wider">
+            Contact Me:
+          </h2>
+        </div>
+
+        <div class="w-full md:w-[50%]">
+          <address
+            class="not-italic text-base font-normal text-black_two leading-7"
+          >
+            <p>Md. Farhad Tanzim Mishu</p>
+            <p class="mb-5">Phone: 01963851464</p>
+            <p class="mb-5">Email: tanzim.mishu@yahoo.com</p>
+            <p>Dhanmondi, Dhaka-1205, Bangladesh</p>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <!--//////////////////////////////// -->
+    <!-- Footer -->
+    <!--//////////////////////////////// -->
+    <footer class="border-t border-black/10 py-10 my-14 mb-0">
+      <div class="container w-90">
+        <a
+          href="#"
+          area-label="footer copyright"
+          class="text-sm inline-block font-normal border-b-2 border-transparent duration-300 hover:border-black"
+        >
+          Proudly powered by WordPress
+        </a>
+      </div>
+    </footer>
+
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=802465111026022&autoLogAppEvents=1"
+      nonce="XRvmyyEk"
+    ></script>
+    <script src="assets/js/iconify-icon.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
