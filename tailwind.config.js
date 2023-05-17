@@ -17,9 +17,7 @@ module.exports = {
         95: "95%",
         90: "90%",
       },
-      backgroundImage: {
-        "hero-bg": "url('../../assets/images/cropped-website-scaled-1.jpg')",
-      },
+
       colors: {
         black: "#222",
         black_two: "#333",

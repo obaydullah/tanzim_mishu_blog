@@ -12,23 +12,32 @@
     <meta name="author" content="John Doe" />
     <title>Short Films</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="../../assets/images/cropped-website-scaled-1.webp"
+      type="image/webp"
+    />
   </head>
   <body>
     <!--//////////////////////////////// -->
     <!-- Custom Header -->
     <!--//////////////////////////////// -->
     <header class="h-[182px]">
-      <div class="bg-hero-bg h-full bg-cover bg-[center] w-full flex-1">
+      <div
+        class="bg-[url('../../assets/images/cropped-website-scaled-1.webp')] h-full bg-cover bg-[center] w-full flex-1"
+      >
         <div class="container w-90 h-full flex justify-start items-center">
           <div class="flex items-center gap-10">
             <img
-              src="./assets/images/cropped-website-pp-new.png"
+              src="assets/images/cropped-website-pp-new.webp"
               alt="Profile Photo"
               class="w-20 aspect-[1]"
             />
             <div>
               <h2
-                class="text-4xl font-bold uppercase text-white tracking-wider"
+                class="text-2xl md:text-4xl font-bold uppercase text-white tracking-wider"
               >
                 Tanzim Mishu
               </h2>
@@ -217,17 +226,21 @@
       <!-- Main content and right widget area -->
       <!--//////////////////////////////// -->
       <div class="container w-90 flex justify-between gap-6">
-        <section class="w-[100%] md:w-[58%] self-start">
+        <section class="w-[100%] md:w-[58%] self-start" id="content">
           <article class="mb-14">
-            <a href="#" area-label="time">
+            <a href="#" aria-label="time">
               <time
                 datetime="May 29, 2020"
                 class="text-[11px] font-extrabold tracking-[1.5px] text-black/80 uppercase"
                 >May 29, 2020</time
               >
             </a>
-            <h2>
-              <a href="#" area-label="title" class="@apply title">
+            <h2 class="relative">
+              <iconify-icon
+                class="absolute top-2 -left-5 md:-left-9 text-[20px]"
+                icon="material-symbols:push-pin"
+              ></iconify-icon>
+              <a href="#" aria-label="title" class="@apply title">
                 You are amazing, stay in touch
               </a>
             </h2>
@@ -240,7 +253,7 @@
           </article>
 
           <article class="mb-14">
-            <a href="#" area-label="time">
+            <a href="#" aria-label="time">
               <time
                 datetime="May 29, 2020"
                 class="text-[11px] font-extrabold tracking-[1.5px] text-black/80 uppercase"
@@ -248,12 +261,13 @@
               >
             </a>
             <h2>
-              <a href="#" area-label="title" class="@apply title">
+              <a href="#" aria-label="title" class="@apply title">
                 মহান মে দিবস ২০২৩ তথ্যচিত্র – শ্রম ও কর্মসংস্থান মন্ত্রণালয় ।
                 পরিচালনায় – তানজিম মিশু
               </a>
             </h2>
             <iframe
+              loading="lazy"
               class="mt-2 max-w-[100%] w-[550px] aspect-[1/.6]"
               src="https://www.youtube.com/embed/9oCyK4fxf80"
               title="YouTube video player"
@@ -274,7 +288,7 @@
                 <a
                   class="p-2 font-bold text-black/80"
                   href="#"
-                  area-label="paginagion"
+                  aria-label="paginagion"
                   >1</a
                 >
               </li>
@@ -282,7 +296,7 @@
                 <a
                   class="p-2 font-bold duration-300 border-b-2 border-transparent hover:border-black"
                   href="#"
-                  area-label="paginagion"
+                  aria-label="paginagion"
                   >2</a
                 >
               </li>
@@ -290,7 +304,7 @@
                 <a
                   class="p-2 font-bold duration-300 border-b-2 border-transparent hover:border-black"
                   href="#"
-                  area-label="paginagion"
+                  aria-label="paginagion"
                   >3</a
                 >
               </li>
@@ -298,13 +312,13 @@
                 <a
                   class="p-2 font-bold duration-300 border-b-2 border-transparent hover:border-black"
                   href="#"
-                  area-label="paginagion"
+                  aria-label="paginagion"
                   >4</a
                 >
               </li>
             </ul>
 
-            <a href="#" areal-label="next">
+            <a href="#" aria-label="next">
               <iconify-icon
                 class="text-2xl text-black/70 absolute right-0 top-[50%] transform translate-y-[-50%] bg-black_three p-2 duration-300 hover:text-white hover:bg-hover"
                 icon="material-symbols:arrow-right-alt"

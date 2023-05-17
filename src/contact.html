@@ -12,23 +12,32 @@
     <meta name="author" content="John Doe" />
     <title>Contact</title>
     <link rel="stylesheet" href="assets/css/contact.css" />
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="../../assets/images/cropped-website-scaled-1.webp"
+      type="image/webp"
+    />
   </head>
   <body>
     <!--//////////////////////////////// -->
     <!-- Custom Header -->
     <!--//////////////////////////////// -->
     <header class="h-[182px]">
-      <div class="bg-hero-bg h-full bg-cover bg-[center] w-full flex-1">
+      <div
+        class="bg-[url('../../assets/images/cropped-website-scaled-1.webp')] h-full bg-cover bg-[center] w-full flex-1"
+      >
         <div class="container w-90 h-full flex justify-start items-center">
           <div class="flex items-center gap-10">
             <img
-              src="./assets/images/cropped-website-pp-new.png"
+              src="assets/images/cropped-website-pp-new.webp"
               alt="Profile Photo"
               class="w-20 aspect-[1]"
             />
             <div>
               <h2
-                class="text-4xl font-bold uppercase text-white tracking-wider"
+                class="text-2xl md:text-4xl font-bold uppercase text-white tracking-wider"
               >
                 Tanzim Mishu
               </h2>

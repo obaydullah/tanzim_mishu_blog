@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx tailwindcss -i ./tailwindcss/style.css -o ./src/assets/css/style.css --watch",
-    "contact": "npx tailwindcss -i ./tailwindcss/contact.css -o ./src/assets/css/contact.css --watch"
+    "start": "npx tailwindcss -i ./tailwindcss/style.css -o ./src/assets/css/style.css --minify --watch",
+    "contact": "npx tailwindcss -i ./tailwindcss/contact.css -o ./src/assets/css/contact.css --minify --watch"
   },
   "keywords": [],
   "author": "",

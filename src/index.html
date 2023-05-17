@@ -12,6 +12,14 @@
     <meta name="author" content="John Doe" />
     <title>Tanzim Mishu Blog</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link
+      rel="preload"
+      fetchpriority="high"
+      as="image"
+      href="../../assets/images/cropped-website-scaled-1.webp"
+      type="image/webp"
+    />
   </head>
   <body class="relative">
     <!--//////////////////////////////// -->
@@ -20,43 +28,48 @@
     <div
       class="container w-90 flex justify-center items-center gap-2 absolute left-[50%] transform translate-x-[-50%] top-4"
     >
-      <a href="#" class="relative group">
+      <a href="#" class="relative group" aria-label="Facebook">
         <img
           class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
           src="assets/images/social__hover.svg"
           alt="hover" />
+
         <img
-          class="w-10 aspect-auto"
+          width="40"
+          height="40"
           src="assets/images/default_facebook.png"
           alt=""
       /></a>
-      <a href="#" class="relative group">
+      <a href="#" class="relative group" aria-label="Youtube">
         <img
           class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
           src="assets/images/social__hover.svg"
           alt="hover" />
         <img
-          class="w-10 aspect-auto"
+          width="40"
+          height="40"
           src="assets/images/default_youtube.png"
           alt=""
       /></a>
-      <a href="#" class="relative group">
+      <a href="#" class="relative group" aria-label="twitter">
         <img
           class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
           src="assets/images/social__hover.svg"
           alt="hover" />
         <img
-          class="w-10 aspect-auto"
+          width="40"
+          height="40"
           src="assets/images/default_twitter.png"
           alt=""
       /></a>
-      <a href="#" class="relative group">
+      <a href="#" class="relative group" aria-label="instagram">
         <img
           class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
           src="assets/images/social__hover.svg"
           alt="hover" />
         <img
-          class="w-10 aspect-auto"
+          width="40"
+          height="40"
           src="assets/images/default_instagram.png"
           alt=""
       /></a>
@@ -66,11 +79,13 @@
     <!-- Custom Header -->
     <!--//////////////////////////////// -->
     <header class="h-[88vh]">
-      <div class="bg-hero-bg h-full bg-cover bg-[center] w-full flex-1">
+      <div
+        class="bg-[url('../../assets/images/cropped-website-scaled-1.webp')] h-full bg-cover bg-[center] w-full flex-1"
+      >
         <div class="container w-90 h-full flex justify-start items-end">
           <div class="mb-10 flex items-center gap-8 md:gap-10">
             <img
-              src="./assets/images/cropped-website-pp-new.png"
+              src="assets/images/cropped-website-pp-new.webp"
               alt="Profile Photo"
               class="w-20 aspect-[1]"
             />
@@ -101,12 +116,12 @@
                 <a
                   class="@apply nav__link text-black/60"
                   href="index.html"
-                  area-label="home"
+                  aria-label="home"
                   >home</a
                 >
               </li>
               <li>
-                <a class="@apply nav__link" href="tvc.html" area-label="tvc"
+                <a class="@apply nav__link" href="tvc.html" aria-label="tvc"
                   >tvc</a
                 >
               </li>
@@ -114,7 +129,7 @@
                 <a
                   class="@apply nav__link"
                   href="documentry.html"
-                  area-label="documentary films"
+                  aria-label="documentary films"
                   >documentary films</a
                 >
               </li>
@@ -122,7 +137,7 @@
                 <a
                   class="@apply nav__link"
                   href="shortfilms.html"
-                  area-label="short films"
+                  aria-label="short films"
                   >short films</a
                 >
               </li>
@@ -130,7 +145,7 @@
                 <a
                   class="@apply nav__link"
                   href="artdesign.html"
-                  area-label="art and design"
+                  aria-label="art and design"
                   >art and design</a
                 >
               </li>
@@ -138,7 +153,7 @@
                 <a
                   class="@apply nav__link"
                   href="musicalfilms.html"
-                  area-label="musical films"
+                  aria-label="musical films"
                   >musical films</a
                 >
               </li>
@@ -146,7 +161,7 @@
                 <a
                   class="@apply nav__link"
                   href="writings.html"
-                  area-label="writings"
+                  aria-label="writings"
                   >writings</a
                 >
               </li>
@@ -154,7 +169,7 @@
                 <a
                   class="@apply nav__link"
                   href="contact.html"
-                  area-label="contact"
+                  aria-label="contact"
                   >contact</a
                 >
               </li>
@@ -164,6 +179,7 @@
               href="#content"
               class="absolute top-[50%] transform translate-y-[-50%] right-0 p-3"
               id="down__arrow"
+              aria-label="Down arrow"
             >
               <iconify-icon
                 class="text-2xl transform rotate-90 text-black/70"
@@ -200,12 +216,12 @@
                 <a
                   class="@apply nav__link text-black/60"
                   href="index.html"
-                  area-label="home"
+                  aria-label="home"
                   >home</a
                 >
               </li>
               <li class="border-b border-black/20">
-                <a class="@apply nav__link" href="tvc.html" area-label="tvc"
+                <a class="@apply nav__link" href="tvc.html" aria-label="tvc"
                   >tvc</a
                 >
               </li>
@@ -213,7 +229,7 @@
                 <a
                   class="@apply nav__link"
                   href="documentry.html"
-                  area-label="documentary films"
+                  aria-label="documentary films"
                   >documentary films</a
                 >
               </li>
@@ -221,7 +237,7 @@
                 <a
                   class="@apply nav__link"
                   href="shortfilms.html"
-                  area-label="short films"
+                  aria-label="short films"
                   >short films</a
                 >
               </li>
@@ -229,7 +245,7 @@
                 <a
                   class="@apply nav__link"
                   href="artdesign.html"
-                  area-label="art and design"
+                  aria-label="art and design"
                   >art and design</a
                 >
               </li>
@@ -237,7 +253,7 @@
                 <a
                   class="@apply nav__link"
                   href="musicalfilms.html"
-                  area-label="musical films"
+                  aria-label="musical films"
                   >musical films</a
                 >
               </li>
@@ -245,7 +261,7 @@
                 <a
                   class="@apply nav__link"
                   href="writings.html"
-                  area-label="writings"
+                  aria-label="writings"
                   >writings</a
                 >
               </li>
@@ -253,7 +269,7 @@
                 <a
                   class="@apply nav__link"
                   href="contact.html"
-                  area-label="contact"
+                  aria-label="contact"
                   >contact</a
                 >
               </li>
@@ -281,7 +297,7 @@
       <div class="container w-90 flex justify-between gap-6">
         <section class="w-[100%] md:w-[58%] self-start" id="content">
           <article class="mb-14">
-            <a href="#" area-label="time">
+            <a href="#" aria-label="time">
               <time
                 datetime="May 29, 2020"
                 class="text-[11px] font-extrabold tracking-[1.5px] text-black/80 uppercase"
@@ -293,7 +309,7 @@
                 class="absolute top-2 -left-5 md:-left-9 text-[20px]"
                 icon="material-symbols:push-pin"
               ></iconify-icon>
-              <a href="#" area-label="title" class="@apply title">
+              <a href="#" aria-label="title" class="@apply title">
                 You are amazing, stay in touch
               </a>
             </h2>
@@ -306,7 +322,7 @@
           </article>
 
           <article class="mb-14">
-            <a href="#" area-label="time">
+            <a href="#" aria-label="time">
               <time
                 datetime="May 29, 2020"
                 class="text-[11px] font-extrabold tracking-[1.5px] text-black/80 uppercase"
@@ -314,18 +330,15 @@
               >
             </a>
             <h2>
-              <a href="#" area-label="title" class="@apply title">
+              <a href="#" aria-label="title" class="@apply title">
                 মহান মে দিবস ২০২৩ তথ্যচিত্র – শ্রম ও কর্মসংস্থান মন্ত্রণালয় ।
                 পরিচালনায় – তানজিম মিশু
               </a>
             </h2>
+
             <iframe
-              class="mt-2 max-w-[100%] w-[550px] aspect-[1/.6]"
-              src="https://www.youtube.com/embed/9oCyK4fxf80"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              class="lazyload mt-2 max-w-[100%] w-[550px] aspect-[1/.6]"
+              data-src="https://www.youtube.com/embed/eRbiy8YXsY0"
             ></iframe>
           </article>
 
@@ -340,7 +353,7 @@
                 <a
                   class="p-2 font-bold text-black/80"
                   href="#"
-                  area-label="paginagion"
+                  aria-label="paginagion"
                   >1</a
                 >
               </li>
@@ -348,7 +361,7 @@
                 <a
                   class="p-2 font-bold duration-300 border-b-2 border-transparent hover:border-black"
                   href="#"
-                  area-label="paginagion"
+                  aria-label="paginagion"
                   >2</a
                 >
               </li>
@@ -356,7 +369,7 @@
                 <a
                   class="p-2 font-bold duration-300 border-b-2 border-transparent hover:border-black"
                   href="#"
-                  area-label="paginagion"
+                  aria-label="paginagion"
                   >3</a
                 >
               </li>
@@ -364,13 +377,13 @@
                 <a
                   class="p-2 font-bold duration-300 border-b-2 border-transparent hover:border-black"
                   href="#"
-                  area-label="paginagion"
+                  aria-label="paginagion"
                   >4</a
                 >
               </li>
             </ul>
 
-            <a href="#" areal-label="next">
+            <a href="#" aria-label="next">
               <iconify-icon
                 class="text-2xl text-black/70 absolute right-0 top-[50%] transform translate-y-[-50%] bg-black_three p-2 duration-300 hover:text-white hover:bg-hover"
                 icon="material-symbols:arrow-right-alt"
@@ -412,7 +425,7 @@
       <div class="container w-90">
         <a
           href="#"
-          area-label="footer copyright"
+          aria-label="footer copyright"
           class="text-sm inline-block font-normal border-b-2 border-transparent duration-300 hover:border-black"
         >
           Proudly powered by WordPress
@@ -428,7 +441,8 @@
       src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=802465111026022&autoLogAppEvents=1"
       nonce="XRvmyyEk"
     ></script>
-    <script src="assets/js/iconify-icon.min.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script defer src="assets/js/lazysizes.min.js"></script>
+    <script defer src="assets/js/iconify-icon.min.js"></script>
+    <script defer src="assets/js/index.js"></script>
   </body>
 </html>
