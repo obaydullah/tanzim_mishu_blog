@@ -13,20 +13,20 @@
     <title>Tanzim Mishu Blog</title>
     <link rel="stylesheet" href="assets/css/style.css" />
 
-    <link
+    <!-- <link
       rel="preload"
       fetchpriority="high"
       as="image"
-      href="assets/images/cropped-website-scaled-1.webp"
+      href="../../assets/images/cropped-website-scaled-1.webp"
       type="image/webp"
-    />
+    /> -->
   </head>
   <body class="relative">
     <!--//////////////////////////////// -->
     <!-- Social Icon -->
     <!--//////////////////////////////// -->
     <div
-      class="container w-90 flex justify-center items-center gap-2 absolute left-[50%] transform translate-x-[-50%] top-4"
+      class="container w-90 flex justify-center items-center gap-2 absolute z-20 left-[50%] transform translate-x-[-50%] top-4"
     >
       <a href="#" class="relative group" aria-label="Facebook">
         <img
@@ -79,9 +79,13 @@
     <!-- Custom Header -->
     <!--//////////////////////////////// -->
     <header class="h-[88vh]">
-      <div
-        class="bg-[url('../../assets/images/cropped-website-scaled-1.webp')] h-full bg-cover bg-[center] w-full flex-1"
-      >
+      <div class="h-full bg-cover bg-[center] w-full flex-1 relative z-10">
+        <img
+          class="lazyload h-full w-full object-cover absolute top-0 left-0 -z-10"
+          data-src="assets/images/cropped-website-scaled-1.webp"
+          alt="Hero Image"
+        />
+
         <div class="container w-90 h-full flex justify-start items-end">
           <div class="mb-10 flex items-center gap-8 md:gap-10">
             <img
@@ -436,7 +440,6 @@
 
     <div id="fb-root"></div>
     <script
-      async
       defer
       crossorigin="anonymous"
       src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=802465111026022&autoLogAppEvents=1"
