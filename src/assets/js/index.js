@@ -3,10 +3,10 @@ function menuShow() {
   const mobileMenu = document.getElementById("mobile__menu");
 
   //change icon
-  if (toggleIcon.children[0].getAttribute("icon") === "ic:sharp-menu") {
+  if (toggleIcon.children[0].getAttribute("icon") === "zondicons:menu") {
     toggleIcon.children[0].setAttribute("icon", "mingcute:close-fill");
   } else {
-    toggleIcon.children[0].setAttribute("icon", "ic:sharp-menu");
+    toggleIcon.children[0].setAttribute("icon", "zondicons:menu");
   }
 
   //   show and hide menu
