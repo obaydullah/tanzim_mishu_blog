@@ -169,6 +169,81 @@
     <!--//////////////////////////////// -->
     <!-- Navigation -->
     <!--//////////////////////////////// -->
+    <nav class="h-[12vh] z-[9999] hidden md:block sticky top-0">
+      <div class="border-b border-black/10 bg-white">
+        <div class="container w-90">
+          <div class="relative py-3">
+            <ul class="flex flex-wrap">
+              <li>
+                <a class="@apply nav__link" href="index.html" aria-label="home"
+                  >home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link text-black/60"
+                  href="tvc.html"
+                  aria-label="tvc"
+                  >tvc</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link"
+                  href="documentry.html"
+                  aria-label="documentary films"
+                  >documentary films</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link"
+                  href="shortfilms.html"
+                  aria-label="short films"
+                  >short films</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link"
+                  href="artdesign.html"
+                  aria-label="art and design"
+                  >art and design</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link"
+                  href="musicalfilms.html"
+                  aria-label="musical films"
+                  >musical films</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link"
+                  href="writings.html"
+                  aria-label="writings"
+                  >writings</a
+                >
+              </li>
+              <li>
+                <a
+                  class="@apply nav__link"
+                  href="contact.html"
+                  aria-label="contact"
+                  >contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--//////////////////////////////// -->
+    <!-- Mobile Menu -->
+    <!--//////////////////////////////// -->
     <nav class="z-[9999] md:hidden">
       <div class="border-b border-black/10 bg-white">
         <!-- toggle button -->
@@ -246,94 +321,6 @@
               <li class="border-b border-black/20 last:border-b-0">
                 <a
                   class="@apply nav__link__mobile"
-                  href="contact.html"
-                  aria-label="contact"
-                  >contact</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!--//////////////////////////////// -->
-    <!-- Mobile Menu -->
-    <!--//////////////////////////////// -->
-    <nav class="z-[9999] md:hidden">
-      <div class="border-b border-black/10 bg-white">
-        <!-- toggle button -->
-        <div class="text-center border-b border-black/10">
-          <button
-            class="inline-block mx-auto text-sm font-bold p-4"
-            onClick="menuShow()"
-          >
-            <span class="text-[19px] align-middle" id="toggle__icon"
-              ><iconify-icon icon="ic:sharp-menu"></iconify-icon
-            ></span>
-            Menu
-          </button>
-        </div>
-
-        <div class="container w-90 hidden" id="mobile__menu">
-          <div class="relative py-3">
-            <ul class="flex flex-col">
-              <li class="border-b border-black/20">
-                <a
-                  class="@apply nav__link text-black/60"
-                  href="index.html"
-                  aria-label="home"
-                  >home</a
-                >
-              </li>
-              <li class="border-b border-black/20">
-                <a class="@apply nav__link" href="tvc.html" aria-label="tvc"
-                  >tvc</a
-                >
-              </li>
-              <li class="border-b border-black/20">
-                <a
-                  class="@apply nav__link"
-                  href="documentry.html"
-                  aria-label="documentary films"
-                  >documentary films</a
-                >
-              </li>
-              <li class="border-b border-black/20">
-                <a
-                  class="@apply nav__link"
-                  href="shortfilms.html"
-                  aria-label="short films"
-                  >short films</a
-                >
-              </li>
-              <li class="border-b border-black/20">
-                <a
-                  class="@apply nav__link"
-                  href="artdesign.html"
-                  aria-label="art and design"
-                  >art and design</a
-                >
-              </li>
-              <li class="border-b border-black/20">
-                <a
-                  class="@apply nav__link"
-                  href="musicalfilms.html"
-                  aria-label="musical films"
-                  >musical films</a
-                >
-              </li>
-              <li class="border-b border-black/20">
-                <a
-                  class="@apply nav__link"
-                  href="writings.html"
-                  aria-label="writings"
-                  >writings</a
-                >
-              </li>
-              <li class="border-b border-black/20 last:border-b-0">
-                <a
-                  class="@apply nav__link"
                   href="contact.html"
                   aria-label="contact"
                   >contact</a
