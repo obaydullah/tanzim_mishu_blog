@@ -18,13 +18,30 @@
     <!-- Social Icon -->
     <!--//////////////////////////////// -->
     <div
-      class="container w-90 flex justify-center items-center gap-2 absolute left-[50%] transform translate-x-[-50%] top-4"
+      class="flex justify-center items-center gap-2 absolute z-[99999] left-[50%] transform translate-x-[-50%] top-4 duration-500"
+      id="social__icon"
     >
       <a href="#" class="relative group" aria-label="Facebook">
-        <img
-          class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
-          src="assets/images/social__hover.svg"
-          alt="hover" />
+        <div
+          class="absolute left-[50%] transform translate-x-[-50%] rounded-b-[5px] w-20 h-5 bg-white duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+          style="box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1); top: -28px"
+        >
+          <div
+            class="duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+            style="
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-color: transparent #fff;
+              border-style: solid;
+              border-width: 12px 13px 13px 0px;
+              height: 0px;
+              width: 0px;
+              left: 42%;
+              transform: rotate(270deg) translateX(-50%);
+            "
+          ></div>
+        </div>
 
         <img
           width="40"
@@ -33,10 +50,27 @@
           alt=""
       /></a>
       <a href="#" class="relative group" aria-label="Youtube">
-        <img
-          class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
-          src="assets/images/social__hover.svg"
-          alt="hover" />
+        <div
+          class="absolute left-[50%] transform translate-x-[-50%] rounded-b-[5px] w-20 h-5 bg-white duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+          style="box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1); top: -28px"
+        >
+          <div
+            class="duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+            style="
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-color: transparent #fff;
+              border-style: solid;
+              border-width: 12px 13px 13px 0px;
+              height: 0px;
+              width: 0px;
+              left: 42%;
+              transform: rotate(270deg) translateX(-50%);
+            "
+          ></div>
+        </div>
+
         <img
           width="40"
           height="40"
@@ -44,10 +78,26 @@
           alt=""
       /></a>
       <a href="#" class="relative group" aria-label="twitter">
-        <img
-          class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
-          src="assets/images/social__hover.svg"
-          alt="hover" />
+        <div
+          class="absolute left-[50%] transform translate-x-[-50%] rounded-b-[5px] w-20 h-5 bg-white duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+          style="box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1); top: -28px"
+        >
+          <div
+            class="duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+            style="
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-color: transparent #fff;
+              border-style: solid;
+              border-width: 12px 13px 13px 0px;
+              height: 0px;
+              width: 0px;
+              left: 42%;
+              transform: rotate(270deg) translateX(-50%);
+            "
+          ></div>
+        </div>
         <img
           width="40"
           height="40"
@@ -55,10 +105,26 @@
           alt=""
       /></a>
       <a href="#" class="relative group" aria-label="instagram">
-        <img
-          class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
-          src="assets/images/social__hover.svg"
-          alt="hover" />
+        <div
+          class="absolute left-[50%] transform translate-x-[-50%] rounded-b-[5px] w-20 h-5 bg-white duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+          style="box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1); top: -28px"
+        >
+          <div
+            class="duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+            style="
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-color: transparent #fff;
+              border-style: solid;
+              border-width: 12px 13px 13px 0px;
+              height: 0px;
+              width: 0px;
+              left: 42%;
+              transform: rotate(270deg) translateX(-50%);
+            "
+          ></div>
+        </div>
         <img
           width="40"
           height="40"
@@ -114,16 +180,13 @@
                 >
               </li>
               <li>
-                <a
-                  class="@apply nav__link text-black/60"
-                  href="tvc.html"
-                  aria-label="tvc"
+                <a class="@apply nav__link" href="tvc.html" aria-label="tvc"
                   >tvc</a
                 >
               </li>
               <li>
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link text-black/60"
                   href="documentry.html"
                   aria-label="documentary films"
                   >documentary films</a
@@ -170,18 +233,6 @@
                 >
               </li>
             </ul>
-
-            <a
-              href="#content"
-              class="absolute top-[50%] transform translate-y-[-50%] right-0 p-3"
-              id="down__arrow"
-              aria-label="Down arrow"
-            >
-              <iconify-icon
-                class="text-2xl transform rotate-90 text-black/70"
-                icon="material-symbols:arrow-right-alt"
-              ></iconify-icon>
-            </a>
           </div>
         </div>
       </div>
@@ -210,20 +261,23 @@
             <ul class="flex flex-col">
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link text-black/60"
+                  class="@apply nav__link__mobile"
                   href="index.html"
                   aria-label="home"
                   >home</a
                 >
               </li>
               <li class="border-b border-black/20">
-                <a class="@apply nav__link" href="tvc.html" aria-label="tvc"
+                <a
+                  class="@apply nav__link__mobile"
+                  href="tvc.html"
+                  aria-label="tvc"
                   >tvc</a
                 >
               </li>
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link text-black/60"
                   href="documentry.html"
                   aria-label="documentary films"
                   >documentary films</a
@@ -231,7 +285,7 @@
               </li>
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link__mobile"
                   href="shortfilms.html"
                   aria-label="short films"
                   >short films</a
@@ -239,7 +293,7 @@
               </li>
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link__mobile"
                   href="artdesign.html"
                   aria-label="art and design"
                   >art and design</a
@@ -247,7 +301,7 @@
               </li>
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link__mobile"
                   href="musicalfilms.html"
                   aria-label="musical films"
                   >musical films</a
@@ -255,7 +309,7 @@
               </li>
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link__mobile"
                   href="writings.html"
                   aria-label="writings"
                   >writings</a
@@ -263,7 +317,7 @@
               </li>
               <li class="border-b border-black/20 last:border-b-0">
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link__mobile"
                   href="contact.html"
                   aria-label="contact"
                   >contact</a
@@ -439,6 +493,147 @@
               allowfullscreen
             ></iframe>
           </article>
+
+          <article class="mb-14">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >August 24, 2021</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Sasec-2 documentary | Roads and highway department | directed by
+                tanzim mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload max-w-[100%] w-[530px] aspect-[1/.58]"
+              src="https://www.youtube.com/embed/OWCqx-qEuK8"
+              title="Sasec-2 documentary | Roads and highway department | directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-14">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >April 16, 2021</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Roads and highway department theme song | 50years independence
+                day celebration | directed by tanzim mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload max-w-[100%] w-[530px] aspect-[1/.58]"
+              src="https://www.youtube.com/embed/fpQ4351Yoew"
+              title="rhd theme song | 50years independence day celebration | directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-14">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >December 19, 2020</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Bangladesh Army | 19ECB Documentary | Directed by tanzim mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload max-w-[100%] w-[530px] aspect-[1/.58]"
+              src="https://www.youtube.com/embed/dKJHSTrg2Qc"
+              title="Bangladesh Army | 19ECB Documentary | Directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-14">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >October 08, 2020</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Road to heaven | documentary film | directed by tanzim mishu |
+                itna mithamain astagram road
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload max-w-[100%] w-[530px] aspect-[1/.58]"
+              src="https://www.youtube.com/embed/_jsUVsjrOow"
+              title="kishorganj | itna mithamain astagram road documentary film | directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <!--//////////////////////////////// -->
+          <!-- Pagination -->
+          <!--//////////////////////////////// -->
+          <div
+            class="container border-t border-black/10 mx-0 py-10 mt-[100px] relative"
+          >
+            <ul class="flex flex-wrap justify-center items-center">
+              <li>
+                <a
+                  class="p-3 font-bold text-black/70 text-sm"
+                  href="#"
+                  aria-label="paginagion"
+                  >1</a
+                >
+              </li>
+              <li>
+                <a
+                  class="p-3 font-bold duration-300 border-b-2 border-transparent hover:border-black text-sm"
+                  href="#"
+                  aria-label="paginagion"
+                  >2</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="p-3 font-bold duration-300 border-b-2 border-transparent hover:border-black text-sm"
+                  href="#"
+                  aria-label="paginagion"
+                  >3</a
+                >
+              </li>
+            </ul>
+
+            <a href="#" aria-label="next">
+              <iconify-icon
+                class="text-2xl text-black/80 absolute right-0 top-[50%] transform translate-y-[-50%] bg-black_three p-2 duration-300 hover:text-white hover:bg-hover rounded-sm"
+                icon="material-symbols:arrow-right-alt"
+              ></iconify-icon
+            ></a>
+          </div>
         </section>
 
         <section class="w-[34%] hidden md:block">
@@ -474,7 +669,7 @@
     <!--//////////////////////////////// -->
     <!-- Footer -->
     <!--//////////////////////////////// -->
-    <footer class="border-t border-black/10 py-10 my-14 mb-0">
+    <footer class="border-t border-black/10 py-10 pt-24 my-14 mb-0">
       <div class="container w-90">
         <a
           href="#"

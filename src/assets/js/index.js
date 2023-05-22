@@ -50,7 +50,7 @@ window.addEventListener(
   debounce(() => {
     // Update the top value of the main div
     const scrollY = window.scrollY || window.pageYOffset;
-    const newTopValue = 12 + scrollY;
+    const newTopValue = 16 + scrollY;
 
     socialIcon.style.top = `${newTopValue}px`;
     previousTopValue = newTopValue;

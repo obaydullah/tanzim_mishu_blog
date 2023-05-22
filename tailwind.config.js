@@ -15,7 +15,7 @@ module.exports = {
       },
       width: {
         95: "95%",
-        90: "90%",
+        90: "85%",
       },
 
       colors: {

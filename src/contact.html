@@ -18,13 +18,30 @@
     <!-- Social Icon -->
     <!--//////////////////////////////// -->
     <div
-      class="container w-90 flex justify-center items-center gap-2 absolute left-[50%] transform translate-x-[-50%] top-4"
+      class="flex justify-center items-center gap-2 absolute z-[99999] left-[50%] transform translate-x-[-50%] top-4 duration-500"
+      id="social__icon"
     >
       <a href="#" class="relative group" aria-label="Facebook">
-        <img
-          class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
-          src="assets/images/social__hover.svg"
-          alt="hover" />
+        <div
+          class="absolute left-[50%] transform translate-x-[-50%] rounded-b-[5px] w-20 h-5 bg-white duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+          style="box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1); top: -28px"
+        >
+          <div
+            class="duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+            style="
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-color: transparent #fff;
+              border-style: solid;
+              border-width: 12px 13px 13px 0px;
+              height: 0px;
+              width: 0px;
+              left: 42%;
+              transform: rotate(270deg) translateX(-50%);
+            "
+          ></div>
+        </div>
 
         <img
           width="40"
@@ -33,10 +50,27 @@
           alt=""
       /></a>
       <a href="#" class="relative group" aria-label="Youtube">
-        <img
-          class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
-          src="assets/images/social__hover.svg"
-          alt="hover" />
+        <div
+          class="absolute left-[50%] transform translate-x-[-50%] rounded-b-[5px] w-20 h-5 bg-white duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+          style="box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1); top: -28px"
+        >
+          <div
+            class="duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+            style="
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-color: transparent #fff;
+              border-style: solid;
+              border-width: 12px 13px 13px 0px;
+              height: 0px;
+              width: 0px;
+              left: 42%;
+              transform: rotate(270deg) translateX(-50%);
+            "
+          ></div>
+        </div>
+
         <img
           width="40"
           height="40"
@@ -44,10 +78,26 @@
           alt=""
       /></a>
       <a href="#" class="relative group" aria-label="twitter">
-        <img
-          class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
-          src="assets/images/social__hover.svg"
-          alt="hover" />
+        <div
+          class="absolute left-[50%] transform translate-x-[-50%] rounded-b-[5px] w-20 h-5 bg-white duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+          style="box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1); top: -28px"
+        >
+          <div
+            class="duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+            style="
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-color: transparent #fff;
+              border-style: solid;
+              border-width: 12px 13px 13px 0px;
+              height: 0px;
+              width: 0px;
+              left: 42%;
+              transform: rotate(270deg) translateX(-50%);
+            "
+          ></div>
+        </div>
         <img
           width="40"
           height="40"
@@ -55,10 +105,26 @@
           alt=""
       /></a>
       <a href="#" class="relative group" aria-label="instagram">
-        <img
-          class="absolute top-[-18px] left-[50%] transform translate-x-[-50%] max-w-[80px] hidden group-hover:block"
-          src="assets/images/social__hover.svg"
-          alt="hover" />
+        <div
+          class="absolute left-[50%] transform translate-x-[-50%] rounded-b-[5px] w-20 h-5 bg-white duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+          style="box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.1); top: -28px"
+        >
+          <div
+            class="duration-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"
+            style="
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-color: transparent #fff;
+              border-style: solid;
+              border-width: 12px 13px 13px 0px;
+              height: 0px;
+              width: 0px;
+              left: 42%;
+              transform: rotate(270deg) translateX(-50%);
+            "
+          ></div>
+        </div>
         <img
           width="40"
           height="40"
@@ -195,14 +261,17 @@
             <ul class="flex flex-col">
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link text-black/60"
+                  class="@apply nav__link__mobile"
                   href="index.html"
-                  area-label="home"
+                  aria-label="home"
                   >home</a
                 >
               </li>
               <li class="border-b border-black/20">
-                <a class="@apply nav__link" href="tvc.html" area-label="tvc"
+                <a
+                  class="@apply nav__link__mobile"
+                  href="tvc.html"
+                  aria-label="tvc"
                   >tvc</a
                 >
               </li>
@@ -210,47 +279,47 @@
                 <a
                   class="@apply nav__link"
                   href="documentry.html"
-                  area-label="documentary films"
+                  aria-label="documentary films"
                   >documentary films</a
                 >
               </li>
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link__mobile"
                   href="shortfilms.html"
-                  area-label="short films"
+                  aria-label="short films"
                   >short films</a
                 >
               </li>
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link__mobile"
                   href="artdesign.html"
-                  area-label="art and design"
+                  aria-label="art and design"
                   >art and design</a
                 >
               </li>
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link__mobile"
                   href="musicalfilms.html"
-                  area-label="musical films"
+                  aria-label="musical films"
                   >musical films</a
                 >
               </li>
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link__mobile"
                   href="writings.html"
-                  area-label="writings"
+                  aria-label="writings"
                   >writings</a
                 >
               </li>
               <li class="border-b border-black/20 last:border-b-0">
                 <a
-                  class="@apply nav__link"
+                  class="@apply nav__link__mobile text-black/60"
                   href="contact.html"
-                  area-label="contact"
+                  aria-label="contact"
                   >contact</a
                 >
               </li>
@@ -284,11 +353,11 @@
     <!--//////////////////////////////// -->
     <!-- Footer -->
     <!--//////////////////////////////// -->
-    <footer class="border-t border-black/10 py-10 my-14 mb-0">
+    <footer class="border-t border-black/10 py-10 pt-24 my-14 mb-0">
       <div class="container w-90">
         <a
           href="#"
-          area-label="footer copyright"
+          aria-label="footer copyright"
           class="text-sm inline-block font-normal border-b-2 border-transparent duration-300 hover:border-black"
         >
           Proudly powered by WordPress
@@ -296,15 +365,8 @@
       </div>
     </footer>
 
-    <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=802465111026022&autoLogAppEvents=1"
-      nonce="XRvmyyEk"
-    ></script>
     <script src="assets/js/iconify-icon.min.js"></script>
+    <script src="assets/js/lazysizes.min.js"></script>
     <script src="assets/js/index.js"></script>
   </body>
 </html>
