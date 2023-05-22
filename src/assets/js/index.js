@@ -4,7 +4,7 @@ function menuShow() {
 
   //change icon
   if (toggleIcon.children[0].getAttribute("icon") === "ic:sharp-menu") {
-    toggleIcon.children[0].setAttribute("icon", "ic:sharp-close");
+    toggleIcon.children[0].setAttribute("icon", "mingcute:close-fill");
   } else {
     toggleIcon.children[0].setAttribute("icon", "ic:sharp-menu");
   }
