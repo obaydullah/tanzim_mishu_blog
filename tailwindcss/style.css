@@ -83,6 +83,9 @@ html {
 body {
   font-family: "Libre Franklin";
 }
+article {
+  margin-bottom: 100px;
+}
 
 /* menu top component  */
 @layer components {
@@ -93,6 +96,6 @@ body {
     @apply px-[16px] py-3 inline-block text-black font-bold lowercase text-sm duration-500 hover:text-black/60 pl-0 pr-10;
   }
   .title {
-    @apply text-[20px] md:text-[26px] font-porto mb-4 inline-block font-thin text-black/90 hover:underline hover:underline-offset-8;
+    @apply text-[20px] md:text-[26px] font-porto mb-4 inline-block font-thin duration-1000 text-black/80 hover:underline hover:underline-offset-8 hover:duration-1000 hover:decoration-[2.5px];
   }
 }
