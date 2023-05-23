@@ -366,6 +366,7 @@
             ></iframe>
           </article>
 
+          <!-- social share  -->
           <div class="md:w-[95%] mx-auto flex gap-3 font-sans">
             <a
               href="#"
@@ -389,6 +390,7 @@
             >
           </div>
 
+          <!-- category  -->
           <div
             class="flex items-center gap-2 text-[11px] font-extrabold font-libre tracking-[1px] my-8 py-8 border-b border-t border-solid border-black_two/10"
           >
@@ -405,6 +407,7 @@
             </div>
           </div>
 
+          <!-- form  -->
           <div>
             <h2 class="text-[22px] font-[300] mb-3">Leave a Reply</h2>
             <p class="text-base font-normal mb-3">
@@ -482,23 +485,35 @@
             </form>
           </div>
 
+          <!-- related content prev, next -->
           <div
-            class="my-10 mt-16 flex items-center justify-between text-black_two"
+            class="my-10 mt-16 block md:flex gap-3 items-center justify-between text-black_two"
           >
-            <a href="#" class="text-left text-[15px] font-extrabold leading-6">
+            <a
+              href="#"
+              class="text-left block mb-4 md:mb-0 text-[15px] font-extrabold leading-6 w-full md:max-w-[50%] justify-self-start relative"
+            >
               <span
                 class="block text-black_two/60 text-[11px] mb-3 uppercase text-left"
                 >Previous</span
               >
+              <iconify-icon
+                class="relative md:absolute md:left-[-25px] md:top-[40px]"
+                icon="bi:arrow-left"
+              ></iconify-icon>
+
               <span
                 class="hover:underline hover:underline-offset-4 hover:duration-1000 hover:decoration-[2.5px]"
                 >Bangladesh Army | 34 engineer construction brigade documentary
                 | Directed by tanzim mishu</span
               >
             </a>
-            <a href="#" class="text-right text-[15px] font-extrabold leading-6">
+            <a
+              href="#"
+              class="text-right text-[15px] font-extrabold leading-6 w-full md:max-w-[50%] ml-auto relative mb-2"
+            >
               <span
-                class="block text-black_two/60 text-[11px] mb-3 uppercase text-right"
+                class="block text-black_two/60 text-[11px] mb-3 uppercase text-left md:text-right"
                 >Next</span
               >
               <span
@@ -506,11 +521,16 @@
                 >মহান মে দিবস ২০২৩ তথ্যচিত্র – শ্রম ও কর্মসংস্থান মন্ত্রণালয় ।
                 পরিচালনায় – তানজিম মিশু</span
               >
+
+              <iconify-icon
+                class="relative md:absolute md:right-[-25px] md:bottom-[5px]"
+                icon="bi:arrow-right"
+              ></iconify-icon>
             </a>
           </div>
         </section>
 
-        <!-- <section class="w-[34%] hidden md:block">
+        <section class="w-[34%] hidden md:block">
           <p class="text-[11px] font-extrabold tracking-[1.5px] mb-4">
             Like my page
           </p>
@@ -536,7 +556,7 @@
               >
             </blockquote>
           </div>
-        </section> -->
+        </section>
       </div>
     </main>
 
