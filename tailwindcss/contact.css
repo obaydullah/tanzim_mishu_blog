@@ -85,7 +85,7 @@ body {
   font-family: "Libre Franklin";
 }
 main {
-  min-height: calc(100vh - 500px);
+  min-height: calc(100vh - 480px);
 }
 
 /* menu top component  */
