@@ -84,6 +84,9 @@ html {
 body {
   font-family: "Libre Franklin";
 }
+main {
+  min-height: calc(100vh - 500px);
+}
 
 /* menu top component  */
 @layer components {
