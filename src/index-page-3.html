@@ -16,7 +16,7 @@
       type="image/png"
       alt="Youth ICT | Favicon"
     />
-    <title>musical films Archives - Tanzim Mishu</title>
+    <title>Tanzim Mishu - military grade filmmaker</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="relative">
@@ -142,16 +142,16 @@
     <!--//////////////////////////////// -->
     <!-- Custom Header -->
     <!--//////////////////////////////// -->
-    <header class="h-[182px]">
-      <div class="h-full bg-cover bg-[center] w-full flex-1 relative">
+    <header class="h-[88vh]">
+      <div class="h-full bg-cover bg-[center] w-full flex-1 relative z-10">
         <img
           class="lazyload h-full w-full object-cover absolute top-0 left-0 -z-10"
           data-src="assets/images/cropped-website-scaled-1.webp"
           alt="Hero Image"
         />
 
-        <div class="container w-90 h-full flex justify-start items-center">
-          <div class="flex items-center gap-10">
+        <div class="container w-90 h-full flex justify-start items-end">
+          <div class="mb-10 flex items-center gap-8 md:gap-10">
             <img
               src="assets/images/cropped-website-pp-new.webp"
               alt="Profile Photo"
@@ -175,13 +175,18 @@
     <!--//////////////////////////////// -->
     <!-- Navigation -->
     <!--//////////////////////////////// -->
-    <nav class="h-[12vh] z-[9999] hidden md:block sticky top-0">
-      <div class="border-b border-black/10 bg-white">
+    <nav
+      class="h-[12vh] z-[9999] hidden sticky md:block top-0 border-b border-black/10 bg-white"
+    >
+      <div class="h-full flex items-center">
         <div class="container w-90">
           <div class="relative py-3">
             <ul class="flex flex-wrap">
               <li>
-                <a class="@apply nav__link" href="index.html" aria-label="home"
+                <a
+                  class="@apply nav__link text-black/60"
+                  href="index.html"
+                  aria-label="home"
                   >home</a
                 >
               </li>
@@ -216,7 +221,7 @@
               </li>
               <li>
                 <a
-                  class="@apply nav__link text-black/60"
+                  class="@apply nav__link"
                   href="musicalfilms.html"
                   aria-label="musical films"
                   >musical films</a
@@ -239,6 +244,18 @@
                 >
               </li>
             </ul>
+
+            <a
+              href="#content"
+              class="absolute top-[50%] transform translate-y-[-50%] right-0 p-3"
+              id="down__arrow"
+              aria-label="Down arrow"
+            >
+              <iconify-icon
+                class="text-2xl transform rotate-90 text-black/70"
+                icon="material-symbols:arrow-right-alt"
+              ></iconify-icon>
+            </a>
           </div>
         </div>
       </div>
@@ -270,7 +287,7 @@
             <ul class="flex flex-col">
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link__mobile"
+                  class="@apply nav__link__mobile text-black/60"
                   href="index.html"
                   aria-label="home"
                   >home</a
@@ -310,7 +327,7 @@
               </li>
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link__mobile text-black/60"
+                  class="@apply nav__link__mobile"
                   href="musicalfilms.html"
                   aria-label="musical films"
                   >musical films</a
@@ -344,35 +361,35 @@
       <!--//////////////////////////////// -->
       <section class="container w-90 py-20 pb-10">
         <h2 class="text-sm font-black text-black uppercase tracking-[1.5px]">
-          CATEGORY: MUSICAL FILMS
+          Posts
         </h2>
       </section>
 
       <!--//////////////////////////////// -->
       <!-- Main content and right widget area -->
       <!--//////////////////////////////// -->
-      <div class="container w-90 flex justify-between">
-        <section class="w-[100%] md:w-[58%] self-start">
+      <div class="container w-90 flex flex-wrap md:flex-nowrap justify-between">
+        <section class="w-[100%] md:w-[58%] self-start" id="content">
+          <!-- page three  -->
           <article class="mb-16">
             <a href="#" aria-label="time">
               <time
                 datetime="May 29, 2020"
                 class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
-                >April 16, 2021</time
+                >SEPTEMBER 2, 2020</time
               >
             </a>
             <h2>
               <a href="#" aria-label="title" class="@apply title">
-                Roads and highway department theme song | 50years independence
-                day celebration | directed by tanzim mishu
+                covid-19 documentary | Bangladesh Army | Directed by tanzim
+                mishu
               </a>
             </h2>
 
             <iframe
               class="lazyload w-[100%] aspect-[1/.58]"
-              src="https://www.youtube.com/embed/fpQ4351Yoew"
-              title=" Roads and highway department theme song | 50years independence
-              day celebration | directed by tanzim mishu"
+              data-src="https://www.youtube.com/embed/DsGhKe8-0IY"
+              title="covid-19 documentary | Bangladesh Army | 34 engineer construction brigade | 1minute bazar |"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
@@ -384,7 +401,7 @@
               <time
                 datetime="May 29, 2020"
                 class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
-                >May 29, 2020</time
+                >MAY 29, 2020</time
               >
             </a>
             <h2>
@@ -396,7 +413,7 @@
 
             <iframe
               class="lazyload w-[100%] aspect-[1/.58]"
-              src="https://www.youtube.com/embed/s2RjRdfOkX8"
+              data-src="https://www.youtube.com/embed/s2RjRdfOkX8"
               title="Etodin Kothay Chile | Shahid &amp; Sharalipi | New Bangla Song"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -409,7 +426,7 @@
               <time
                 datetime="May 29, 2020"
                 class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
-                >May 29, 2020</time
+                >MAY 29, 2020</time
               >
             </a>
             <h2>
@@ -421,7 +438,7 @@
 
             <iframe
               class="lazyload w-[100%] aspect-[1/.58]"
-              src="https://www.youtube.com/embed/QH6zL-0Ui7g"
+              data-src="https://www.youtube.com/embed/QH6zL-0Ui7g"
               title="Durotto | Shahid | Musical Film | Antu | Heme | Directed by Tanzim Mishu | Official Music Video"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -434,7 +451,32 @@
               <time
                 datetime="May 29, 2020"
                 class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
-                >May 29, 2020</time
+                >MAY 29, 2020</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Bhulta Flyover narayanganj documentary film | directed by tanzim
+                mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/E1o6Jj0WPNE"
+              title="Bhulta Flyover narayanganj documentary film | directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >MAY 29, 2020</time
               >
             </a>
             <h2>
@@ -445,13 +487,194 @@
 
             <iframe
               class="lazyload w-[100%] aspect-[1/.58]"
-              src="https://www.youtube.com/embed/YqDuW5hG72A"
+              data-src="https://www.youtube.com/embed/YqDuW5hG72A"
               title="Bondhutto By Shahid | HD Music Video | Friendship Day Spacial Song"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
           </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >MAY 29, 2020</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Amazing old Dhaka Directed by tanzim mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/wk9yNvm67OU"
+              title="Amazing old Dhaka Directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >MAY 29, 2020</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                fill your soul with adventure Bangladesh | directed by tanzim
+                mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/D0FlVIHwE4g"
+              title="fill your soul with adventure Bangladesh | directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >MAY 29, 2020</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Rajshahi Documentary । Election Campaign 2018 | asif ibna alam
+                titash | Directed by tanzim mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/a5XSqxUEU7I"
+              title="Rajshahi Documentary । Election Campaign 2018 |   asif ibna alam titash   | Directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >MAY 29, 2020</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                comilla documentary | Bangaldesh Army | railway overpass |
+                directed by tanzim mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/v-9g_CZZ2u8"
+              title="comilla documentary | Bangaldesh Army | railway overpass | directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >MAY 29, 2020</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Bangaldesh Army | Noakhali documentary | Directed by tanzim
+                mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/94IyPIiSLLM"
+              title="Bangaldesh Army |  Noakhali documentary  | Directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <!--//////////////////////////////// -->
+          <!-- Pagination -->
+          <!--//////////////////////////////// -->
+          <div
+            class="container border-t border-black/10 mx-0 py-10 mt-[100px] relative"
+          >
+            <a href="index-page-2.html" aria-label="next">
+              <iconify-icon
+                class="text-2xl text-black/80 absolute left-0 top-[50%] transform translate-y-[-50%] bg-black_three p-2 duration-300 hover:text-white hover:bg-hover rounded-sm"
+                icon="gg:arrow-left"
+              ></iconify-icon
+            ></a>
+            <ul class="flex flex-wrap justify-center items-center">
+              <li>
+                <a
+                  class="p-3 font-bold duration-300 border-b-2 border-transparent hover:border-black text-sm"
+                  href="index.html"
+                  aria-label="paginagion"
+                  >1</a
+                >
+              </li>
+              <li>
+                <a
+                  class="p-3 font-bold duration-300 border-b-2 border-transparent hover:border-black text-sm"
+                  href="index-page-2.html"
+                  aria-label="paginagion"
+                  >2</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="p-3 font-bold text-black/70 text-sm"
+                  href="index-page-3.html"
+                  aria-label="paginagion"
+                  >3</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="p-3 font-bold duration-300 border-b-2 border-transparent hover:border-black text-sm"
+                  href="index-page-4.html"
+                  aria-label="paginagion"
+                  >4</a
+                >
+              </li>
+            </ul>
+
+            <a href="index-page-4.html" aria-label="next">
+              <iconify-icon
+                class="text-2xl text-black/80 absolute right-0 top-[50%] transform translate-y-[-50%] bg-black_three p-2 duration-300 hover:text-white hover:bg-hover rounded-sm"
+                icon="gg:arrow-right"
+              ></iconify-icon
+            ></a>
+          </div>
         </section>
 
         <section class="w-[100%] md:w-[34%]">
@@ -499,9 +722,7 @@
       </div>
     </footer>
 
-    <div id="fb-root"></div>
     <script
-      async
       defer
       crossorigin="anonymous"
       src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=802465111026022&autoLogAppEvents=1"

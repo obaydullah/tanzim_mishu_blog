@@ -16,7 +16,7 @@
       type="image/png"
       alt="Youth ICT | Favicon"
     />
-    <title>musical films Archives - Tanzim Mishu</title>
+    <title>Tanzim Mishu - military grade filmmaker</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body class="relative">
@@ -142,16 +142,16 @@
     <!--//////////////////////////////// -->
     <!-- Custom Header -->
     <!--//////////////////////////////// -->
-    <header class="h-[182px]">
-      <div class="h-full bg-cover bg-[center] w-full flex-1 relative">
+    <header class="h-[88vh]">
+      <div class="h-full bg-cover bg-[center] w-full flex-1 relative z-10">
         <img
           class="lazyload h-full w-full object-cover absolute top-0 left-0 -z-10"
           data-src="assets/images/cropped-website-scaled-1.webp"
           alt="Hero Image"
         />
 
-        <div class="container w-90 h-full flex justify-start items-center">
-          <div class="flex items-center gap-10">
+        <div class="container w-90 h-full flex justify-start items-end">
+          <div class="mb-10 flex items-center gap-8 md:gap-10">
             <img
               src="assets/images/cropped-website-pp-new.webp"
               alt="Profile Photo"
@@ -175,13 +175,18 @@
     <!--//////////////////////////////// -->
     <!-- Navigation -->
     <!--//////////////////////////////// -->
-    <nav class="h-[12vh] z-[9999] hidden md:block sticky top-0">
-      <div class="border-b border-black/10 bg-white">
+    <nav
+      class="h-[12vh] z-[9999] hidden sticky md:block top-0 border-b border-black/10 bg-white"
+    >
+      <div class="h-full flex items-center">
         <div class="container w-90">
           <div class="relative py-3">
             <ul class="flex flex-wrap">
               <li>
-                <a class="@apply nav__link" href="index.html" aria-label="home"
+                <a
+                  class="@apply nav__link text-black/60"
+                  href="index.html"
+                  aria-label="home"
                   >home</a
                 >
               </li>
@@ -216,7 +221,7 @@
               </li>
               <li>
                 <a
-                  class="@apply nav__link text-black/60"
+                  class="@apply nav__link"
                   href="musicalfilms.html"
                   aria-label="musical films"
                   >musical films</a
@@ -239,6 +244,18 @@
                 >
               </li>
             </ul>
+
+            <a
+              href="#content"
+              class="absolute top-[50%] transform translate-y-[-50%] right-0 p-3"
+              id="down__arrow"
+              aria-label="Down arrow"
+            >
+              <iconify-icon
+                class="text-2xl transform rotate-90 text-black/70"
+                icon="material-symbols:arrow-right-alt"
+              ></iconify-icon>
+            </a>
           </div>
         </div>
       </div>
@@ -270,7 +287,7 @@
             <ul class="flex flex-col">
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link__mobile"
+                  class="@apply nav__link__mobile text-black/60"
                   href="index.html"
                   aria-label="home"
                   >home</a
@@ -310,7 +327,7 @@
               </li>
               <li class="border-b border-black/20">
                 <a
-                  class="@apply nav__link__mobile text-black/60"
+                  class="@apply nav__link__mobile"
                   href="musicalfilms.html"
                   aria-label="musical films"
                   >musical films</a
@@ -344,21 +361,123 @@
       <!--//////////////////////////////// -->
       <section class="container w-90 py-20 pb-10">
         <h2 class="text-sm font-black text-black uppercase tracking-[1.5px]">
-          CATEGORY: MUSICAL FILMS
+          Posts
         </h2>
       </section>
 
       <!--//////////////////////////////// -->
       <!-- Main content and right widget area -->
       <!--//////////////////////////////// -->
-      <div class="container w-90 flex justify-between">
-        <section class="w-[100%] md:w-[58%] self-start">
+      <div class="container w-90 flex flex-wrap md:flex-nowrap justify-between">
+        <section class="w-[100%] md:w-[58%] self-start" id="content">
+          <!-- page two  -->
+
           <article class="mb-16">
             <a href="#" aria-label="time">
               <time
                 datetime="May 29, 2020"
                 class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
-                >April 16, 2021</time
+                >September 04, 2022</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                “বঙ্গমাতা বেগম ফজিলাতুন নেছা মুজিব ৮ম বাংলাদেশ-চীন মৈত্রী সেতু”
+                পিরোজপুর
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/uR3tpHiFbAY"
+              title='"বঙ্গমাতা বেগম ফজিলাতুন নেছা মুজিব ৮ম বাংলাদেশ-চীন মৈত্রী সেতু" পিরোজপুর'
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >JANUARY 12, 2022</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Bangladesh Army 4 project | road, underpass, bridge construction
+                | directed by tanzim mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/tAF5tDMN4C4"
+              title="Bangladesh Army 4 project | road, underpass, bridge construction | directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >SEPTEMBER 8, 2021</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                mahalchari shindukchari road | Bangladesh Army | Directed by
+                tanzim mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/5k21S1vuVzk"
+              title="মহালছড়ি সিন্দুকছড়ি সড়ক প্রকল্প | বাংলাদেশ সেনাবাহিনী । ভিডিও পরিচালনায় তানজিম মিশু"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >AUGUST 24, 2021</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Sasec-2 documentary | Roads and highway department | directed by
+                tanzim mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/OWCqx-qEuK8"
+              title="Sasec-2 documentary | Roads and highway department | directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >APRIL 16, 2021</time
               >
             </a>
             <h2>
@@ -370,9 +489,8 @@
 
             <iframe
               class="lazyload w-[100%] aspect-[1/.58]"
-              src="https://www.youtube.com/embed/fpQ4351Yoew"
-              title=" Roads and highway department theme song | 50years independence
-              day celebration | directed by tanzim mishu"
+              data-src="https://www.youtube.com/embed/fpQ4351Yoew"
+              title="rhd theme song | 50years independence day celebration | directed by tanzim mishu"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
@@ -384,20 +502,94 @@
               <time
                 datetime="May 29, 2020"
                 class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
-                >May 29, 2020</time
+                >MARCH 4, 2021</time
               >
             </a>
             <h2>
               <a href="#" aria-label="title" class="@apply title">
-                Etodin Kothay Chile | Shahid & Sharalipi | directed by tanzim
+                Operation Bijoy Gourab trailer | Bangladesh Army | directed by
+                tanzim mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/U9v7nmg4mjk"
+              title="Operation Bijoy Gourab trailer | Bangladesh Army | directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >MARCH 4, 2021</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Bangladesh Army | chittagong water logging documentary |
+                directed by tanzim mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/qdbVrPnx3MQ"
+              title="Bangladesh Army | chittagong water logging documentary | directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >DECEMBER 19, 2020</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Bangladesh Army | 19ECB Documentary | Directed by tanzim mishu
+              </a>
+            </h2>
+
+            <iframe
+              class="lazyload w-[100%] aspect-[1/.58]"
+              data-src="https://www.youtube.com/embed/dKJHSTrg2Qc"
+              title="Bangladesh Army | 19ECB Documentary | Directed by tanzim mishu"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </article>
+
+          <article class="mb-16">
+            <a href="#" aria-label="time">
+              <time
+                datetime="May 29, 2020"
+                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
+                >DECEMBER 10, 2020</time
+              >
+            </a>
+            <h2>
+              <a href="#" aria-label="title" class="@apply title">
+                Anowar city Magic Island dino park ovc | directed by tanzim
                 mishu
               </a>
             </h2>
 
             <iframe
               class="lazyload w-[100%] aspect-[1/.58]"
-              src="https://www.youtube.com/embed/s2RjRdfOkX8"
-              title="Etodin Kothay Chile | Shahid &amp; Sharalipi | New Bangla Song"
+              data-src="https://www.youtube.com/embed/imSIwerDWsg"
+              title="Anowar city Magic Island dino park ovc | directed by tanzim mishu"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
@@ -409,49 +601,82 @@
               <time
                 datetime="May 29, 2020"
                 class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
-                >May 29, 2020</time
+                >OCTOBER 8, 2020</time
               >
             </a>
             <h2>
               <a href="#" aria-label="title" class="@apply title">
-                Durotto | Shahid | Musical Film | Antu | Heme | Directed by
-                Tanzim Mishu
+                Road to heaven | documentary film | directed by tanzim mishu |
+                itna mithamain astagram road
               </a>
             </h2>
 
             <iframe
               class="lazyload w-[100%] aspect-[1/.58]"
-              src="https://www.youtube.com/embed/QH6zL-0Ui7g"
-              title="Durotto | Shahid | Musical Film | Antu | Heme | Directed by Tanzim Mishu | Official Music Video"
+              data-src="https://www.youtube.com/embed/_jsUVsjrOow"
+              title="kishorganj | itna mithamain astagram road documentary film | directed by tanzim mishu"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
           </article>
 
-          <article class="mb-16">
-            <a href="#" aria-label="time">
-              <time
-                datetime="May 29, 2020"
-                class="text-[11px] font-black tracking-[1.5px] text-black/70 uppercase"
-                >May 29, 2020</time
-              >
-            </a>
-            <h2>
-              <a href="#" aria-label="title" class="@apply title">
-                Bondhutto By Shahid | directed by tanzim mishu
-              </a>
-            </h2>
+          <!--//////////////////////////////// -->
+          <!-- Pagination -->
+          <!--//////////////////////////////// -->
+          <div
+            class="container border-t border-black/10 mx-0 py-10 mt-[100px] relative"
+          >
+            <a href="index.html" aria-label="next">
+              <iconify-icon
+                class="text-2xl text-black/80 absolute left-0 top-[50%] transform translate-y-[-50%] bg-black_three p-2 duration-300 hover:text-white hover:bg-hover rounded-sm"
+                icon="gg:arrow-left"
+              ></iconify-icon
+            ></a>
+            <ul class="flex flex-wrap justify-center items-center">
+              <li>
+                <a
+                  class="p-3 font-bold duration-300 border-b-2 border-transparent hover:border-black text-sm"
+                  href="index.html"
+                  aria-label="paginagion"
+                  >1</a
+                >
+              </li>
+              <li>
+                <a
+                  class="p-3 font-bold text-black/70 text-sm"
+                  href="index-page-2.html"
+                  aria-label="paginagion"
+                  >2</a
+                >
+              </li>
 
-            <iframe
-              class="lazyload w-[100%] aspect-[1/.58]"
-              src="https://www.youtube.com/embed/YqDuW5hG72A"
-              title="Bondhutto By Shahid | HD Music Video | Friendship Day Spacial Song"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </article>
+              <li>
+                <a
+                  class="p-3 font-bold duration-300 border-b-2 border-transparent hover:border-black text-sm"
+                  href="index-page-3.html"
+                  aria-label="paginagion"
+                  >3</a
+                >
+              </li>
+
+              <li>
+                <a
+                  class="p-3 font-bold duration-300 border-b-2 border-transparent hover:border-black text-sm"
+                  href="index-page-4.html"
+                  aria-label="paginagion"
+                  >4</a
+                >
+              </li>
+            </ul>
+
+            <a href="index-page-3.html" aria-label="next">
+              <iconify-icon
+                class="text-2xl text-black/80 absolute right-0 top-[50%] transform translate-y-[-50%] bg-black_three p-2 duration-300 hover:text-white hover:bg-hover rounded-sm"
+                icon="gg:arrow-right"
+              ></iconify-icon
+            ></a>
+          </div>
         </section>
 
         <section class="w-[100%] md:w-[34%]">
@@ -499,9 +724,7 @@
       </div>
     </footer>
 
-    <div id="fb-root"></div>
     <script
-      async
       defer
       crossorigin="anonymous"
       src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=802465111026022&autoLogAppEvents=1"
